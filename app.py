@@ -17,15 +17,17 @@ def download_and_split(url):
 
 
 def main():
+    st.title("Gitaraoke")
+    st.subheader("Youtube-based karaoke for guitarists")
+    
     with st.form('Parameters:'):
-
         url = st.text_input('Paste YouTube link:')
-
         parts = []
+
         for part in PARTS:
             if st.checkbox(part, value=part != 'other'):
                 parts.append(part)
-        st.form_submit_button('Działaj!')
+        st.form_submit_button('Run!')
 
     if not url:
         st.error('Paste link to youTube video')
@@ -37,7 +39,7 @@ def main():
 
     sounds = download_and_split(url)
 
-    result_buffer = join_parts(parts, sounds)
+    result_buffer = join_parts(sounds, parts)
     filename = '_'.join(parts) + '.mp3'
     st.download_button('Download', result_buffer.read(), filename)
 
