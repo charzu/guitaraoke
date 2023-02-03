@@ -1,5 +1,4 @@
 import os
-import shutil
 from io import BytesIO
 from tempfile import TemporaryDirectory
 import youtube_dl
@@ -16,6 +15,8 @@ def make_downloader(tmp_dir):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
+        # 'max_downloads': 1,
+        'noplaylist': True,
     }
     ydl = youtube_dl.YoutubeDL(ydl_opts)
     return ydl

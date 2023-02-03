@@ -19,7 +19,7 @@ def download_and_split(url):
 def main():
     st.title("Gitaraoke")
     st.subheader("Youtube-based karaoke for guitarists")
-    
+
     with st.form('Parameters:'):
         url = st.text_input('Paste YouTube link:')
         parts = []
@@ -41,6 +41,10 @@ def main():
 
     result_buffer = join_parts(sounds, parts)
     filename = '_'.join(parts) + '.mp3'
+
+    st.subheader('Result')
+    st.audio(result_buffer)
+
     st.download_button('Download', result_buffer.read(), filename)
 
 
