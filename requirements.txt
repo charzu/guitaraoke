@@ -1,5 +1,5 @@
 youtube-dl==2021.12.17
 spleeter==2.3.2
 streamlit
-# click<8
-# protobuf==3.19.6
+click<8
+protobuf==3.19.6
