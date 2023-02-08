@@ -15,6 +15,7 @@ def make_downloader(tmp_dir):
             'preferredcodec': 'mp3',
             'preferredquality': '192',
         }],
+        'cachedir': False,
         # 'max_downloads': 1,
         'noplaylist': True,
     }
