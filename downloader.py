@@ -16,6 +16,7 @@ def make_downloader(tmp_dir):
             'preferredquality': '192',
         }],
         'rm_cachedir': True,
+        'cookies': 'cookies.txt',
         # 'max_downloads': 1,
         'noplaylist': True,
     }
