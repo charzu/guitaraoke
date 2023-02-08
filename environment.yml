@@ -4,5 +4,5 @@ channels:
 dependencies:
   - spleeter==2.2.1
   - youtube-dl==2021.12.17
-  - streamlit==1.17.0
+  - streamlit
   
