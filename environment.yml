@@ -1,8 +1,0 @@
-channels:
-  - conda-forge
-  - deezer-research 
-dependencies:
-  - spleeter==2.2.1
-  - youtube-dl==2021.12.17
-  - streamlit
-  
