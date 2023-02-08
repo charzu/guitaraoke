@@ -1,0 +1,7 @@
+channles:
+  - conda-forge
+dependencies:
+  - spleeter==2.3.2
+  - youtube-dl==2021.12.17
+  - streamlit==1.17.0
+  
