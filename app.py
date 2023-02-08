@@ -1,3 +1,5 @@
+import reinstall
+
 import streamlit as st
 
 from downloader import join_parts
